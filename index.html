@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/main.css">
-		<title></title>
+		<title>Comment App</title>
 
 		<!-- Font Awesome Library -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
@@ -13,12 +13,25 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<h1 id="myH1"></h1>
-		<form id="userCommentForm">
-			<input id="userCommentInput" type="text">
-		<button type="button" onclick="userComment">add comment</button>
+		<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+		<h1 id="comment App">Comment App</h1>
+		<form id="todoForm">
+			<div class="form-group">
+			<input id="username" class="form-control" placeholder="username"></div>
+			<div class="form-group">
+				<textarea id="comment" class="form-control" placeholder="comment"></textarea>
+			</div>
+			<div class="form-group"></div>
+		<button type="button" onclick="todoList()" class="btn btn-primary btn-lg">add comment</button>
 		</form>
-		<ol id="userComment"></ol>
+		<ul id="commentList" class="list-group">
+		</ul>
+		   </div>
+	    </div>
+     </div>
+		
 
 
 		<!-- jquery library -->
